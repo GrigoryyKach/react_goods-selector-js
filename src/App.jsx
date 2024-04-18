@@ -19,7 +19,7 @@ export const App = () => {
   const [selectedGood, setSelectedGood] = useState('Jam');
   const clearButton = () => {
     setSelectedGood('');
-  }
+  };
 
   return (
     <main className="section container">
@@ -29,8 +29,8 @@ export const App = () => {
           <button
             onClick={clearButton}
             data-cy="ClearButton"
-            type='button'
-            className='delete ml-3'
+            type="button"
+            className="delete ml-3"
           />
         ) : (
           'No goods selected'
@@ -77,5 +77,5 @@ export const App = () => {
         </tbody>
       </table>
     </main>
-  )
+  );
 };
